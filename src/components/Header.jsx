@@ -106,6 +106,73 @@ const Header = () => {
           </div>
         </div>
       </header>
+      <header className="header-bottom py-3">
+        <div className="container-xxl ">
+          <div className="row ">
+            <div className="col-12">
+              <div className="menu-bottom d-flex align-items-center gap-15">
+                <div>
+                  <div className="dropdown ">
+                    <button
+                      className="btn btn-secondary dropdown-toggle bg-transparent d-flex gap-10 align-items-center
+                      "
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img
+                        src="/public/images/menu.png"
+                        alt="menu"
+                        className="menu-img"
+                      />
+                      <span className="me-5 d-inline-block">
+                        Shop Categories
+                      </span>
+                    </button>
+                    <ul
+                      className="dropdown-menu "
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li>
+                        <Link className="dropdown-item text-white" to="">
+                          Action
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="dropdown-item text-white" to="">
+                          Another action
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="dropdown-item  text-white" to="">
+                          Something else here
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="menu-links">
+                  <div className="d-flex align-items-center gap-30 ">
+                    <NavLink className="Link-bottom" to="/">
+                      Home
+                    </NavLink>
+                    <NavLink className="Link-bottom" to="/">
+                      Our Store
+                    </NavLink>
+                    <NavLink className="Link-bottom" to="/">
+                      Blogs
+                    </NavLink>
+                    <NavLink className="Link-bottom" to="/contact">
+                      Contact
+                    </NavLink>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
     </>
   );
 };

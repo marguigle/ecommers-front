@@ -46,3 +46,41 @@ a {
 .gap-15 {
   gap: 15px;
 }
+.gap-30 {
+  gap: 30px;
+}
+
+.Link-bottom {
+  text-decoration: none;
+  color: rgb(255, 221, 0);
+}
+.header-bottom {
+  background-color: #656565;
+}
+.header-bottom .menu-links,
+.dropdown button {
+  text-transform: uppercase;
+  line-height: 18px;
+  letter-spacing: 0.3;
+  font-size: 14px;
+  text-decoration: none;
+  color: rgb(255, 221, 0);
+  border: 0;
+}
+.menu-img {
+  max-width: 4.8%;
+}
+
+.header-bottom .dropdown-menu {
+  width: 70%;
+  background-color: #656565;
+  transform: translate3d(0px, 61.5px, 0px) !important;
+}
+.header-bottom .dropdown-item {
+  /* padding: 10px; */
+  /* margin-bottom: 3px; */
+  /* border-bottom: 1px solid rgb(147, 147, 147); */
+}
+.header-bottom .dropdown-item:hover {
+  background-color: rgb(110, 108, 108);
+}
