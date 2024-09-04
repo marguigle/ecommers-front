@@ -1,6 +1,9 @@
 import { NavLink, Link } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
-
+import { VscGitCompare } from "react-icons/vsc";
+import { GrFavorite } from "react-icons/gr";
+import { FaRegUser } from "react-icons/fa";
+import { FiShoppingCart } from "react-icons/fi";
 const Header = () => {
   return (
     <>
@@ -50,55 +53,37 @@ const Header = () => {
             </div>
             <div className="col-5 ">
               <div className="header-upper-links d-flex align-items-center justify-content-between">
-                <div>
-                  <img
-                    src="/images/comparar-codigo.svg"
-                    className="link-img"
-                    alt="compare"
-                  />
-                  <Link className="Link d-flex align-items-center">
+                <div className="text-white fs-2 text-center">
+                  <VscGitCompare />
+                  <Link className=" Link d-flex flex-column fs-6 align-items-center text-white">
                     <p>
                       Compare <br />
                       Products
                     </p>
                   </Link>
                 </div>
-                <div>
-                  <img
-                    src="/images/comentario-corazon.svg"
-                    className="link-img"
-                    alt="wishlist"
-                  />
-                  <Link className="Link d-flex align-items-center">
+                <div className="text-white fs-2 text-center">
+                  <GrFavorite />
+                  <Link className="Link d-flex flex-column fs-6 text-white align-items-center">
                     <p>
                       Favourite <br />
                       wishlist
                     </p>
                   </Link>
                 </div>
-                <div>
-                  <img
-                    src="/images/usuario.svg"
-                    className="link-img"
-                    alt="user"
-                  />
-                  <Link className="Link d-flex align-items-center">
+                <div className="text-white fs-2 text-center">
+                  <FaRegUser />
+                  <Link className="Link d-flex flex-column fs-6 text-white align-items-center text-center">
                     <p>
                       Login <br />
                       My Account
                     </p>
                   </Link>
                 </div>
-                <div>
-                  <img
-                    src="/images/carrito-de-compra-anadir.svg"
-                    className="link-img"
-                    alt="cart"
-                  />
-                  <Link className="Link   gap-15">
-                    <div className="d-flex flex-column">
-                      <span className="badge bg-white text-dark">0</span>
-                    </div>
+                <div className="text-white fs-2 text-center">
+                  <FiShoppingCart className="mb-2" />
+                  <Link className="Link d-flex flex-column fs-6 text-white align-items-center text-center gap-5">
+                    <p className="badge bg-white text-dark">0</p>
                   </Link>
                 </div>
               </div>
